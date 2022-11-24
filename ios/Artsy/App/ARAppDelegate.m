@@ -187,7 +187,7 @@ static ARAppDelegate *_sharedInstance = nil;
     FBSDKApplicationDelegate *fbAppDelegate = [FBSDKApplicationDelegate sharedInstance];
     [fbAppDelegate application:application didFinishLaunchingWithOptions:launchOptions];
     if ([FIRApp defaultApp] == nil) {
-        [FIRApp configure];
+//        [FIRApp configure];
     }
     return YES;
 }

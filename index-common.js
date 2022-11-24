@@ -13,7 +13,7 @@ if (__DEV__) {
   } catch {}
 }
 
-require("./src/app/errorReporting/sentrySetup").setupSentry({ environment: "bootstrap" })
+//require("./src/app/errorReporting/sentrySetup").setupSentry({ environment: "bootstrap" })
 
 if (metaflags.startStorybook) {
   global.__STORYBOOK__ = true

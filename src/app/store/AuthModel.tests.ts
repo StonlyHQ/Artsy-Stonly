@@ -1,6 +1,6 @@
 import { appleAuth } from "@invertase/react-native-apple-authentication"
 import Cookies from "@react-native-cookies/cookies"
-import { GoogleSignin } from "@react-native-google-signin/google-signin"
+// import { GoogleSignin } from "@react-native-google-signin/google-signin"
 import { LegacyNativeModules } from "app/NativeModules/LegacyNativeModules"
 import { mockPostEventToProviders } from "app/tests/globallyMockedStuff"
 import { AccessToken, GraphRequest, LoginManager } from "react-native-fbsdk-next"
@@ -481,15 +481,15 @@ describe("AuthModel", () => {
       })
       await GlobalStore.actions.auth.getXAppToken()
       mockFetch.mockClear()
-      ;(GoogleSignin.hasPlayServices as jest.Mock).mockReturnValue(true)
-      ;(GoogleSignin.signIn as jest.Mock).mockReturnValue({
-        user: { email: "googleEmail@gmail.com", name: "name from google" },
-      })
-      ;(GoogleSignin.getTokens as jest.Mock).mockReturnValue({ accessToken: "google-token" })
+      // ;(GoogleSignin.hasPlayServices as jest.Mock).mockReturnValue(true)
+      // ;(GoogleSignin.signIn as jest.Mock).mockReturnValue({
+      //   user: { email: "googleEmail@gmail.com", name: "name from google" },
+      // })
+      // ;(GoogleSignin.getTokens as jest.Mock).mockReturnValue({ accessToken: "google-token" })
     })
 
     it("throws an error if google play services are not available", async () => {
-      ;(GoogleSignin.hasPlayServices as jest.Mock).mockReturnValue(false)
+      // ;(GoogleSignin.hasPlayServices as jest.Mock).mockReturnValue(false)
 
       const result = await GlobalStore.actions.auth
         .authGoogle({ signInOrUp: "signUp", agreedToReceiveEmails: true })

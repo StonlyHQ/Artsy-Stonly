@@ -11,7 +11,7 @@
 + (BOOL)isDev;
 {
 #if TARGET_IPHONE_SIMULATOR
-    return YES;
+    return NO;
 #elif DEBUG
     return YES;
 #else
@@ -34,6 +34,7 @@
 
 + (BOOL)isBetaOrDev;
 {
+    return NO;
     return [self isDev] || [self isBeta];
 }
 

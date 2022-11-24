@@ -25,7 +25,8 @@ export const environment = defineEnvironmentOptions({
     description: "Gravity URL",
     presets: {
       local: "http://localhost:3000",
-      staging: "https://stagingapi.artsy.net",
+      // staging: "https://stagingapi.artsy.net",
+      staging: "https://api.artsy.net",
       production: "https://api.artsy.net",
     },
   },
@@ -33,7 +34,8 @@ export const environment = defineEnvironmentOptions({
     description: "Metaphysics URL",
     presets: {
       local: "http://localhost:3000/v2",
-      staging: "https://metaphysics-staging.artsy.net/v2",
+      // staging: "https://metaphysics-staging.artsy.net/v2",
+      staging: "https://metaphysics-production.artsy.net/v2",
       production: "https://metaphysics-production.artsy.net/v2",
     },
   },
@@ -41,7 +43,8 @@ export const environment = defineEnvironmentOptions({
     description: "Prediction URL",
     presets: {
       local: "http://localhost:3000/v2",
-      staging: "https://live-staging.artsy.net",
+      // staging: "https://live-staging.artsy.net",
+      staging: "https://live.artsy.net",
       production: "https://live.artsy.net",
     },
   },
@@ -49,7 +52,8 @@ export const environment = defineEnvironmentOptions({
     description: "Force URL",
     presets: {
       local: "http://localhost:5000",
-      staging: "https://staging.artsy.net",
+      // staging: "https://staging.artsy.net",
+      staging: "https://www.artsy.net",
       production: "https://www.artsy.net",
     },
   },
@@ -57,7 +61,8 @@ export const environment = defineEnvironmentOptions({
     description: "Causality WebSocket URL",
     presets: {
       local: "ws://localhost:8080",
-      staging: "wss://causality-staging.artsy.net",
+      // staging: "wss://causality-staging.artsy.net",
+      staging: "wss://causality.artsy.net",
       production: "wss://causality.artsy.net",
     },
   },

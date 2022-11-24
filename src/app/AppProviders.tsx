@@ -12,7 +12,7 @@ import { ToastProvider } from "./Components/Toast/toastHook"
 import { defaultEnvironment } from "./relay/createEnvironment"
 import { GlobalStore, GlobalStoreProvider, useFeatureFlag } from "./store/GlobalStore"
 import { combineProviders } from "./utils/combineProviders"
-import { UnleashProvider } from "./utils/experiments/UnleashProvider"
+// import { UnleashProvider } from "./utils/experiments/UnleashProvider"
 import { track } from "./utils/track"
 import { GravityWebsocketContextProvider } from "./Websockets/GravityWebsocketContext"
 
@@ -24,7 +24,7 @@ export const AppProviders = ({ children }: { children?: React.ReactNode }) =>
       GestureHandlerProvider,
       TrackingProvider,
       GlobalStoreProvider,
-      UnleashProvider, // uses: GlobalStoreProvider
+      // UnleashProvider, // uses: GlobalStoreProvider
       SafeAreaProvider,
       ProvideScreenDimensions, // uses: SafeAreaProvider
       RelayDefaultEnvProvider,

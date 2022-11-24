@@ -92,7 +92,7 @@ native-code-checksum.hash
 .i-had-a-netrc-file
 
 # Ignore env files
-**/.env*
+# **/.env*
 !.env.example
 
 # Android/IntelliJ
